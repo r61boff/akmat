@@ -1,0 +1,12 @@
+/node_modules/
+
+/.git/
+
+/**/Thumbs.db
+/**/*.DS_Store
+
+/scr/
+/app/**/*.jpg
+/app/**/*.png
+/app/**/*.gif
+/source/
