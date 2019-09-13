@@ -6,6 +6,10 @@ $tablet: 768px
 $phone: 680px
 // Bootstrap compatible gutter variable => $gutter
 $gutter: var(--gutter)
+$pattern-white: var(--pattern-white)
+$pattern-green: var(--pattern-green)
+$pattern-blue: var(--pattern-blue)
+$wall: var(--pattern-wall)
 
 // // Breakpoints mixin settings (node_modules/bootstrap/scss/mixins/_breakpoints.scss)
 // // Example: +media-breakpoint-down(xs) - ≥576px / +media-breakpoint-up(sm) - // ≤576px
@@ -14,3 +18,17 @@ $gutter: var(--gutter)
 @function toRem($size)
 	$remSize: $size / 16px
 	@return #{$remSize}rem
+//slick
+$slick-font-path: "./fonts/" !default
+$slick-font-family: "slick" !default
+$slick-loader-path: "./" !default
+$slick-arrow-color: white !default
+$slick-dot-color: black !default
+$slick-dot-color-active: $slick-dot-color !default
+$slick-prev-character: "\2190" !default
+$slick-next-character: "\2192" !default
+$slick-dot-character: "\2022" !default
+$slick-dot-size: 6px !default
+$slick-opacity-default: 0.75 !default
+$slick-opacity-on-hover: 1 !default
+$slick-opacity-not-active: 0.25 !default

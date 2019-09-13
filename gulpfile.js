@@ -41,8 +41,9 @@ gulp.task('styles', function() {
 // Scripts & JS Libraries
 gulp.task('scripts', function() {
 	return gulp.src([
-		// 'node_modules/jquery/dist/jquery.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
-		'app/js/_fslightbox.min.js', // JS library fancybox noJquery
+		'node_modules/jquery/dist/jquery.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
+		'app/js/_magnific-popup.min.js', // JS library fancybox Jquery
+        'app/js/_slick.min.js', // slider with jquery
 		'app/js/_custom.js', // Custom scripts. Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

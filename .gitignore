@@ -6,6 +6,7 @@
 /**/*.DS_Store
 
 /scr/
+/src/
 /app/**/*.jpg
 /app/**/*.png
 /app/**/*.gif

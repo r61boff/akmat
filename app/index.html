@@ -18,9 +18,11 @@
 </head>
 
 <body>
+<div class="page">	
 	<header>
 		<div class="container">
 			<div class="top">
+				<div class="top__scroll_menu"></div>
 				<a href="/" class="top__logo">
 					<img src="img/logo.png" alt="Компания АкмаТЕКС" class="top__logo_img">
 				</a>
@@ -39,6 +41,13 @@
 					</li>
 					<li class="top__menu_item">
 						<a href="#" class="top__menu_link">О компании</a>
+						<ul class="top__menu">
+							<li class="top__menu_item"><a href="" class="top__menu_link">Документы</a></li>
+							<li class="top__menu_item"><a href="" class="top__menu_link">Сертификаты</a></li>
+							<li class="top__menu_item"><a href="" class="top__menu_link">Отзывы</a></li>
+							<li class="top__menu_item"><a href="" class="top__menu_link">Акции</a></li>
+							<li class="top__menu_item"><a href="" class="top__menu_link">Новости</a></li>
+						</ul>
 					</li>
 					<li class="top__menu_item">
 						<a href="#" class="top__menu_link">Контакты</a>
@@ -47,7 +56,7 @@
 						<a class="top__menu_link top__menu_link--current">Франшиза</a>
 					</li>
 				</ul>
-				<button class="top__fos btn">Задать вопрос</button>
+				<button class="top__fos btn btn--pop-up" data-mfp-src="#contact_with_us">Задать вопрос</button>
 				<a href="tel:+7 4012 63-29-27" class="top__phone phone">+7 4012 63-29-27</a>
 				<div class="top__adress adress">
 					Калининград<br>ул. Портовая, 30
@@ -171,7 +180,7 @@
 			</div>
 		</div>
 	</div>
-	<div style="background-image: url();" class="benefits_bg">
+	<div style="background-image: url(img/betonomeshalka.png);" class="benefits__bg">
 		<div class="container">
 			<div class="benefits">
 				<div class="benefits__heading h2">
@@ -239,7 +248,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="white_pattern pattern">
+	<div class="pattern--white pattern">
 		<div class="container">
 			<div class="fos kirpich">
 				<div class="fos__info">
@@ -296,7 +305,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="white_pattern pattern">
+	<div class="pattern--white pattern">
 		<div class="container">
 			<div class="mailing kirpich">
 				<form action="" class="mailing__form">
@@ -317,7 +326,7 @@
 	
 
 	</main>
-	<footer class="pattern">
+	<footer class="pattern pattern--blue">
 		<div class="grey_pattern">
 			<div class="container">
 				<div class="footer">
@@ -453,6 +462,30 @@
 			</div>
 		</div>
 	</footer>
+<script src="js/scripts.min.js" async></script>
+</div>
+	<div class="pop-up" id="contact_with_us">
+		<form class="contacts__fos contacts__fos--pop-up">
+				<div class="form_heading contacts__fos_heading">Заказать обратный звонок</div>
+				<div class="contacts__name">
+					Оставьте сообщение или задайте вопрос, наш специалист перезвонит вам!
+				</div>
+				<input type="text" class="contacts__input contacts__input--name" placeholder="Ваше имя">
+				<input type="text" class="contacts__input contacts__input--phone" placeholder="Телефон">
+				<input type="text" class="contacts__input contacts__input--email" placeholder="Email">
+				<textarea class="contacts__textarea" name="message" id="" rows="6" placeholder="Сообщение"></textarea>
+				<label class="contacts__soglasie label_soglasie">
+					<input type="checkbox" id="soglsie_contacts" name="soglsie">
+					<label for="soglsie_contacts" class="input input--checkbox"></label>
+					<span class="contacnts__soglasie_txt">Даю согласие на <a href="#">обработку персональных данных</a></span>
+				</label>
+				<button class="contacts__submit btn">Отправить</button>
+			</form>
+			<div class="pop-up__thanks">
+				<div class="pop-up__thanks_big">Спасибо!</div>
+				<div class="pop-up__thanks_txt">Ваша заявка принята</div>
+			</div>
+	</div>
 </body>
 </html>
 

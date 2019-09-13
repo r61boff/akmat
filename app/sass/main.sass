@@ -19,6 +19,9 @@ input, textarea
 html
 	margin-right: 0px!important
 	font-size: 16px
+@media only screen and (max-width: 1024px)
+	html	
+		font-size: 13px
 body
 	min-width: 320px
 	position: relative
@@ -34,8 +37,13 @@ a
 //Переменные
 \:root
 	--gutter: 20px
-
-
+	--pattern-white: url('data:image/jpeg;base64,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')
+	--pattern-green: url('data:image/jpeg;base64,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')
+	--pattern-blue: url('data:image/jpeg;base64,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')
+	--pattern-wall: url(data:image/jpeg;base64,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)
+@media only screen and(max-width: 590px) //root
+	\:root
+		--gutter: 8px
 //input text
 input[type=text], input[type=phone], input[type=email], textarea
 	display: inline-block
@@ -75,11 +83,11 @@ label.input
 		transition: 0.2s opacity ease
 		opacity: 0
 	&--checkbox
-		padding: 4px 0 0 2px
+		padding: 0 0 0 0
 		&::before
 			width: 100%
 			height: 100%
-			content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30.624 22.656'%3e%3cpath fill-rule='evenodd' fill='%2398C2CD' d='M22.651 3.481L11.374 14.758l-1.687 1.686L.41 7.168l2.952-2.952 6.325 6.325L19.699.529l2.952 2.952z'/%3e%3c/svg%3e")
+			content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-5 -8 32.624 25.656'%3e%3cpath fill-rule='evenodd' fill='%2398C2CD' d='M22.651 3.481L11.374 14.758l-1.687 1.686L.41 7.168l2.952-2.952 6.325 6.325L19.699.529l2.952 2.952z'/%3e%3c/svg%3e")
 	&--radio
 		border-radius: 50%
 		&::before
@@ -98,7 +106,38 @@ input, label.input
 	&:disabled
 		background-color: #efefef
 
-
+table
+	width: 100%
+	margin: toRem(24px) 0
+	//border-collapse: collapse
+	display: block
+	overflow-x: auto
+	white-space: nowrap
+	max-width: 100%	
+	font-size: toRem(16px)
+	//border: 1px solid #cdcdcd
+tbody
+	display: table
+	width: 100%
+tr
+	&:nth-child(2n+1)
+		background-color: #f8f8f8
+th, td
+	padding: 0.95rem 1.25rem
+th
+	background-color: #c3c600
+	text-align: center
+	border: 1px solid #fff
+	border-top-color: #cdcdcd
+	font-weight: 600
+	&:first-child
+		border-left-color: #cdcdcd
+	&:last-child
+		border-right-color: #cdcdcd
+	color: #fff
+td
+	line-height: 1.75rem
+	border: 1px solid #cdcdcd
 .btn
 	display: inline-flex
 	justify-content: center
@@ -192,13 +231,13 @@ h2, .h2
 	align-items: start
 	height: toRem(49px)
 	padding: toRem(16px) toRem(21px) 0
-	line-height: 1.1
+	line-height: 1.12
 	letter-spacing: 6px
 	background-color: #fff
-	text-shadow: 4px 0 0 #fff,-4px 0 0 #fff,0px -4px 0 #fff,-7px 0 0 #fff
-	z-index: 1
+	background-clip: content-box
+	//text-shadow: 4px 0 0 #fff,-4px 0 0 #fff,0px -4px 0 #fff,-7px 0 0 #fff
 	&::before
-		content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' height='68' width='68'%3e%3cpath d='M65.5 53.3496V65.5h-63v-63h63v12.5054' fill='none' fill-opacity='0' fill-rule='evenodd' stroke='%23b3b519' stroke-width='5'/%3e%3c/svg%3e")
+		content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68 68'%3e%3cpath d='M65.5 53.3496V65.5h-63v-63h63v12.5054' fill='none' fill-opacity='0' fill-rule='evenodd' stroke='%23b3b519' stroke-width='5'/%3e%3c/svg%3e")
 		display: block
 		position: absolute
 		top: 0
@@ -213,6 +252,7 @@ h2, .h2
 		background-color: #272a29
 		color: #fff
 		text-shadow: none
+		z-index: 1
 	&--404
 		height: auto
 		background-color: transparent
@@ -223,34 +263,95 @@ h2, .h2
 			content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68 70'%3e%3cpath d='M65.5 55.3496V67.5h-63v-65h63v9.5054' fill='none' fill-opacity='0' stroke='%23ffffff' stroke-width='4'/%3e%3c/svg%3e")
 			width: 20.5rem
 			height: 100%
+h2
+	z-index: 1
 h3, .h3
 	font-size: toRem(24px)
 	font-weight: bold
 	line-height: 1.2
 	color: #222
+
 h4, .h4
 	font-size: toRem(20px)
 	font-weight: bold
 	line-height: 1.2
+h2
+	margin-top: 14px
+	margin-bottom: 56px
+h3
+	margin: -4px 0 28px
+h4
+	margin-bottom: 28px
+h5
+	margin: 26px 0
+	font-size: toRem(18px)
+	font-weight: bold
+h6
+	font-size: toRem(16px)
+	margin: 16px 0 24px
+@media only screen and (max-width: 1024px) //h
+	h2, .h2
+		&--404
+			font-size: 190px
+			&::before
+				width: toRem(240px)
+@media only screen and (max-width: 768px) //h
+	h1, .h1
+	h2, .h2
+		height: auto
+		&--404
+			&::before
+				width: 19rem
+	h3, .h3
+		font-size: toRem(20px)
+	h4, .h4
+	h5
+	h6
+		font-size: toRem(14px)
+@media only screen and (max-width: 590px) //h
+	h1, .h1
+		font-size: toRem(30px)
+	h2, .h2
+		font-size: toRem(22px)
+		&--404
+			font-size: toRem(120px)
+			&::before
+				width: 11rem
+	h3, .h3
+		font-size: toRem(18px)
+	h4, .h4
+		font-size: toRem(15px)
+	h5
+		font-size: toRem(13px)
+	h6
+		font-size: toRem(11px)
+ul
+	//line-height: 2
+	list-style-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3e%3cpath fill-rule='evenodd' fill='%23C3C600' d='M0 0h6v6H0V0z'/%3e%3c/svg%3e")
+
 p
 	margin-bottom: 1.9rem
 small
 	font-size: 69%
 	letter-spacing: -0.5px
 
-
+.page
+	overflow-x: hidden
 .kirpich
 	border: 26px solid transparent
 	border-image: url(../img/kirpich.min.png) 26 round
 .pattern
-	background-image: url('data:image/png;base64,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')
+	background-image: $pattern-white
 	&--green
-		background-color: #b6b819
-.white_pattern
-	.container
-		background-color: #fff
+		background-image: $pattern-green
+	&--blue
+		background-image: $pattern-blue
+		
+	&--white:not(.pattern--product)
+		.container
+			background-color: #fff
 .wall_pattern
-	background-image: url(data:image/jpeg;base64,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)
+	background-image: $wall
 	
 .form_heading
 	font-size: toRem(30px)
@@ -273,6 +374,13 @@ small
 		margin-right: toRem(14px)
 		width: toRem(32px)
 		//height: 82%
+@media only screen and (max-width: 1024px)
+	.phone
+		font-size: toRem(16px)
+@media only screen and (max-width: 590px)
+	.phone
+		&::before
+			width: toRem(22px)
 .adress
 	display: flex
 	align-items: center
@@ -283,6 +391,10 @@ small
 		margin-right: toRem(14px)
 		width: toRem(32px)
 		//height: 82%
+@media only screen and (max-width: 590px)
+	.adress
+		&::before
+			width: toRem(22px)
 .email
 	display: flex
 	align-items: center
@@ -296,6 +408,10 @@ small
 		margin-right: toRem(14px)
 		width: toRem(32px)
 		//height: 82%
+@media only screen and (max-width: 590px)
+	.email
+		&::before
+			width: toRem(22px)
 .arrow
 	&::before
 		display: block
@@ -313,23 +429,46 @@ small
 	object-fit: cover
 
 .gallery
-	
+	display: flex
+
 .gal_item
 	position: relative
 	max-width: toRem(186px)
-	border: 5px solid #c3c600
 	transition: 0.2s all ease
-	&:hover
-		border-width: 0
+	flex: 1
+	&.slick-slide
+		max-width: unset
+		margin: 0 10px
+		&:hover
+			//transform: scale(1.08)
 	&::before
 		content: ""
 		display: block
 		padding-top: 100%
+	&::after
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		border: 5px solid #c3c600
+		transition: 0.2s all ease
+	&:hover::after
+		border-width: 1px
+	&.slick-current::after
+		border-color: #6d6f18
 
+header, main, footer
+	//overflow-x: hidden
 .container
 	max-width: 1240px
 	margin: 0 auto
 	padding: 0 $gutter
+@media only screen and (max-width: 1240px)
+	header .container
+		//background-color: #f2f2f2
 
 .top
 	position: relative
@@ -340,6 +479,16 @@ small
 	padding: toRem(25px) 0 toRem(35px)
 	font-size: toRem(15px)
 	line-height: 1.2
+	transition: 0.2s all ease
+	&--scroll
+		position: fixed
+		top: 0
+		max-height: 1240px
+		margin: 0 auto
+		padding-left: $gutter
+		padding-right: $gutter
+		grid-template-areas: "menu logo logo  fos fos phone phone phone adress adress social social"
+		z-index: 98
 	&::before, &::after
 		content: ""
 		display:block
@@ -354,15 +503,23 @@ small
 		left: 40%
 	&::after
 		right: 40%
+	&__scroll_menu
+		display: none
 	&__logo
 		grid-area: logo
+		align-self: center
+		&_img
+			max-width: 100%
 
 
 	&__slogan
 		grid-area: slogan
 		color: #222222
 		padding-top: toRem(4px)
+	&--scroll &__slogan
+		display: none
 	&__menu
+		position: relative
 		grid-area: menu
 		justify-self: end
 		display: flex
@@ -374,20 +531,103 @@ small
 				&::after
 					content: ": :"
 					padding: 0 toRem(7px)
+		//&_item:hover &_l2
+			//display: block
+			//opacity: 1
+			//width: max-content
+			//height: 100%
+			//transform: scale(1)
 		&_link
 			color: inherit
 			padding: 0 toRem(7px)
 			&:hover:not(&--current)
 				background-color: #c3c600
 				color: #fff
+				text-decoration: none
 			&--current
 				color: #333333
 				font-weight: bold
+		& &
+			//display: none
+			position: absolute
+			top: 100%
+			opacity: 0
+			width: 0%
+			height: 0
+			transform: scale(0)
+			padding: 0
+			list-style: none
+			transition: 0.2s all ease
+			z-index: 10
+		& & &_item
+			background-color: #b9bc00
+			padding: toRem(12px) toRem(18px)
+			transition: 0.2s all ease
+			font-size: toRem(15px)
+			line-height: 1.2
+			&:not(:last-child)::after
+				content: none
+		
+			&:hover
+				background-color: #c3c600
+				padding-left: toRem(30px)
+		& & &_link
+			color: #fff
+			&:hover
+				color: #fff
+				text-decoration: none
+		&_item:hover &
+				display: block
+				opacity: 1
+				width: max-content
+				height: 100%
+				transform: scale(1)
+	&__scroll_menu
+		display: none
+		grid-area: menu
+		align-self: center
+		justify-self: start
+		&::before
+			content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 53 53'%3e%3cpath d='M1.5 1.5h50v50h-50v-50z' fill='%23FFF' stroke='%23C3C600' stroke-width='3' fill-rule='evenodd'/%3e%3cpath d='M15.5 37v-3.875h22V37zm0-12.438h22v3.875h-22zm0-8.562h22v3.875h-22z' fill='%23c3c600' fill-rule='evenodd'/%3e%3c/svg%3e")
+			display: block
+			width: 40px				
+	&--scroll &__scroll_menu
+		display: block
+
+	&--scroll &__menu
+		position: absolute
+		top: 90%
+		left: calc(-1 * var(--gutter))
+		opacity: 0
+		width: 0%
+		height: 0
+		transform: scale(0)
+		transition: 0.2s all ease
+		flex-direction: column
+		padding: 0
+		margin: 0
+		background-color: #f2f2f2
+		z-index: 99
+		&_item
+			position: relative
+			width: 100%
+			min-width: max-content
+			padding: toRem(10px) toRem(32px) toRem(10px) $gutter
+			&:hover
+				background-color: #c3c600
+			&::after
+				display: none
+				content: ""
+	&--scroll &__menu &__menu
+		top: 0
+		left: 100%
 	&__descriptor
 		grid-area: descr
 		padding-top: toRem(8px)
 		font-weight: bold
 		text-transform: uppercase
+	&--scroll &__descriptor
+		display: none
 	&__fos
 		grid-area: fos
 	&__phone
@@ -399,9 +639,94 @@ small
 	&__social
 		grid-area: social
 		justify-content: flex-end
+
+@media only screen and (max-width: 1024px) //.top
+	.top
+		//background-color: #f2f2f2
+		grid-template-areas: "logo logo logo menu menu menu menu menu menu menu menu menu" "fos fos fos phone phone phone adress adress adress social social social"
+		&::before, &::after
+			//content: none
+		&--scroll
+			grid-template-areas: "menu logo logo  fos fos fos phone phone phone social social social"
+		&--scroll &__adress
+			display: none
+		&__slogan
+			display: none
+		&__descriptor
+			display: none
+@media only screen and (min-width: 768px) //.top
+	.top
+		&__menu
+			
+		&--scroll &__scroll_menu:hover~&__menu, &--scroll &__menu:hover
+			opacity: 1
+			width: max-content
+			height: max-content
+			transform: scale(1)
+@media only screen and (max-width: 768px) //.top
+	.top
+		//background-color: #f2f2f2
+		grid-template-areas: "menu logo logo  logo phone phone phone phone phone social social social"
+		&--scroll
+			grid-template-areas: "menu logo logo  logo phone phone phone phone phone social social social"
+		&--scroll &__adress
+			display: none
+		&__slogan
+			display: none
+		&__descriptor
+			display: none
+		&__fos
+			display: none
+		&__adress
+			display: none		
+		&__menu
+			position: absolute
+			top: 90%
+			left: calc(-1 * var(--gutter))
+			opacity: 0
+			width: 0%
+			height: 0
+			transform: scale(0)
+			transition: 0.2s all ease
+			flex-direction: column
+			padding: 0
+			margin: 0
+			background-color: #f2f2f2
+			z-index: 99
+			&_item
+				position: relative
+				width: 100%
+				min-width: max-content
+				padding: toRem(10px) toRem(32px) toRem(10px) $gutter
+				&:hover
+					background-color: #c3c600
+				&::after
+					display: none
+					content: ""
+			& &
+				top: 0
+				left: 100%
+		&__scroll_menu
+			display: block
+		&__scroll_menu--opened~&__menu, &__menu:hover
+			opacity: 1
+			width: max-content
+			height: max-content
+			transform: scale(1)
+@media only screen and (max-width: 590px) //.top
+	.top
+		grid-template-areas: "menu menu logo  logo logo logo phone phone phone phone phone phone" ". . . . . . social social social social social social"
+		&--scroll
+			grid-template-areas: "menu menu logo  logo logo logo phone phone phone phone phone phone"
+		&--scroll &__social
+			display: none
+
 .prod
 	display: flex
 	justify-content: flex-start
+	&--portfolio
+		justify-content: stretch
+		padding-top: 74px
 	&__menu
 		display: none
 		position: absolute
@@ -450,12 +775,7 @@ small
 			font-weight: bold
 			color: #222222
 			text-transform: uppercase
-		&_wrap:hover &
-			display: block
-			opacity: 1
-			width: 140%
-			height: 100%
-			transform: scale(1)
+
 	&__green
 		margin-right: toRem(24px)
 		position: relative
@@ -470,8 +790,43 @@ small
 			width: 5000%
 			background-color: #c3c600
 			z-index: -1
-			
-
+@media only screen and (max-width: 1200px) //.prod
+	.prod	
+@media only screen and (min-width: 768px) //.prod
+	.prod
+		&__menu
+			&_wrap:hover &
+				display: block
+				opacity: 1
+				width: 140%
+				height: 100%
+				transform: scale(1)
+@media only screen and (max-width: 768px) //.prod
+	.prod
+		flex-wrap: wrap
+		justify-content: flex-end
+		&--portfolio
+			justify-content: stretch
+			.item_collect
+				flex: 1 1 170px
+		&__menu
+			&_wrap--opened &
+				display: block
+				opacity: 1
+				width: 140%
+				height: 100%
+				transform: scale(1)
+@media only screen and (max-width: 590px) //.prod
+	.prod
+		flex-wrap: wrap
+		justify-content: flex-start
+		&__menu_heading
+			padding: toRem(20px) 0
+		&__green
+			flex: 1 100%
+		&__menu
+			&_wrap:hover &
+				width: 100%
 .item_collect
 	display: flex
 	align-items: center
@@ -481,21 +836,55 @@ small
 	font-weight: bold
 	color: #222222
 	text-transform: uppercase
+	transition: 0.2s all ease
+	&--portfolio
+		flex: 1
 	&:hover
 		color: #c3c600
 		text-decoration: none
 	&__icon
+		position: relative
 		max-width: toRem(65px)
 		max-height: toRem(65px)
 		border-radius: 50%
 		margin-right: toRem(16px)
 		overflow: hidden
+		&::after
+			content: ""
+			position: absolute
+			top: 0
+			right: 0
+			left: 0
+			bottom: 0
+			display: block
+			width: 100%
+			height: 100%
+			border: 0px solid #c3c600
+			border-radius: 50%
+			transition: 0.2s all ease
 		&_img
-			max-width: 100%
+			width: 100%
+			height: 100%
 			object-fit: cover
-	&:hover &__icon
-		border: 5px solid #c3c600
-
+	&:hover &__icon::after
+		border-width: 5px 
+@media only screen and (max-width: 1200px) //.item_collect
+	.item_collect
+		margin-right: toRem(12px)
+		&__icon
+			min-width: toRem(60px)
+			min-height: toRem(60px)
+@media only screen and (max-width: 1024px) //.item_collect
+	.item_collect
+		//font-size: toRem(10px)
+		&__icon
+			margin-right: toRem(10px)
+@media only screen and (max-width: 768px) //.banner
+	.item_collect
+		flex: 0 1 175px
+@media only screen and (max-width: 590px) //.banner
+	.item_collect
+		flex: 0 1 44%
 .banner
 	background-repeat: no-repeat
 	background-position: center
@@ -505,10 +894,22 @@ small
 		grid-template-columns: 1fr 1fr
 		padding: 23.2% 0 12.75%
 		&_block
+			position: relative
 			padding: toRem(38px) toRem(34px) toRem(42px) 
-			border: 14px solid rgba(193, 222, 230, 0.6)
+			border: 14px solid transparent
 			background-clip: padding-box 
 			background-color: #ffffff
+			z-index: 1
+			&::after
+				content: ""
+				display: block
+				position: absolute
+				top: -14px
+				bottom: -14px
+				left: -14px
+				right: -14px
+				border: 14.1px solid rgba(193, 222, 230, 0.6)
+				z-index: 0
 		&_heading
 			text-transform: uppercase
 			margin-bottom: toRem(29px)
@@ -519,6 +920,20 @@ small
 		&_btn
 			padding-left: 9.5%
 			padding-right: 9.5%
+@media only screen and (max-width: 1024px) //.banner
+	.banner
+		&__info
+			grid-template-columns: 2fr 1fr
+			padding-top: 7.2%
+@media only screen and (max-width: 768px) //.banner
+	.banner
+		&__info
+			grid-template-columns: 3fr 1fr
+@media only screen and (max-width: 590px) //.banner
+	.banner
+		&__info
+			grid-template-columns: 1fr
+			padding-top: 20%
 .green
 	background-position: center bottom
 	background-repeat: no-repeat
@@ -527,21 +942,34 @@ small
 		background-position: center top
 	&:not(&--main)
 		padding: toRem(54px) 0 toRem(154px)
+		background-size: cover
+@media only screen and (max-width: 768px) //.green
+	.green
+		&:not(&--main)
+			padding: toRem(36px) 0 toRem(73px)
+@media only screen and (max-width: 590px) //.green
+	.green
+		background-size: 300%
 .bestsellers
 	margin-top: toRem(-280px)
 	padding: toRem(198px) 0 toRem(83px)
+	position: relative
+	z-index: 5
 	&--cat
 		margin-top: 0
 		margin-bottom: toRem(36px)
 		padding: toRem(11px) 0 0
 	&--cat &__link
 		margin-bottom:
+	&--product
+		margin: 30px 0 0
+		padding: 30px 0 
 	&__heading
 		background-color: #fff
 		&--green
 			background-color: #b3b519
 			&::before
-				content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' height='68' width='68'%3e%3cpath d='M65.5 53.3496V65.5h-63v-63h63v12.5054' fill='none' fill-opacity='0' fill-rule='evenodd' stroke='%23ffffff' stroke-width='5'/%3e%3c/svg%3e")
+				content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68 68'%3e%3cpath d='M65.5 53.3496V65.5h-63v-63h63v12.5054' fill='none' fill-opacity='0' fill-rule='evenodd' stroke='%23ffffff' stroke-width='5'/%3e%3c/svg%3e")
 	&__list
 		display: grid
 		grid-template-columns: repeat(4, 1fr)
@@ -554,6 +982,24 @@ small
 		margin: 0 auto
 		padding-left: 4.5%
 		padding-right: 4.5%
+@media only screen and (max-width: 768px) //.bestsellers
+	.bestsellers
+		&:not(.bestsellers--cat):not(.bestsellers--prod)
+			margin-top: -8rem
+			padding-top: 5rem
+		&__heading
+			margin-bottom: toRem(24px)
+		&__list
+			grid-template-columns: repeat(3, 1fr)
+@media only screen and (max-width: 590px) //.bestsellers
+	.bestsellers
+		&:not(.bestsellers--cat):not(.bestsellers--prod)
+			margin-top: -9rem
+			padding-top: 10rem
+		&__heading
+			margin-bottom: toRem(24px)
+		&__list
+			grid-template-columns: repeat(2, 1fr)
 .bestseller
 	position: relative
 	&::before
@@ -616,6 +1062,11 @@ small
 			background-color: #c3c600
 .benefits
 	margin-top: toRem(-30px)
+	&__bg
+		background-repeat: no-repeat
+		background-position: top right
+		margin-top: toRem(-220px)
+		padding-top: toRem(220px)
 	&__list
 		display: grid
 		grid-template-columns: repeat(2, 1fr)
@@ -624,9 +1075,20 @@ small
 		grid-row-gap: toRem(32px)
 		margin-top: toRem(103px)
 	&__txt
-		margin: toRem(76px) 0 toRem(132px)
+		padding: toRem(76px) 0 toRem(132px)
 		line-height: 1.5
-
+@media only screen and (max-width: 768px) //.benefits
+	.benefits
+		&__bg
+			background-image: none!important
+@media only screen and (max-width: 590px) //.benefits
+	.benefits
+		&__list
+			grid-template-columns: 1fr
+			grid-template-rows: 1fr
+			margin-top: toRem(50px)
+		&__txt
+			padding: toRem(32px) 0 toRem(66px)
 .benefit
 	display: grid
 	grid-template-columns: repeat(6, 1fr)
@@ -638,12 +1100,12 @@ small
 	&:nth-child(odd)
 		grid-template-areas: "icon name name name name ." ". info info info info ."
 	&:nth-child(even)
-		grid-template-areas: ". icon name name name name " ". . info info info info "
+		grid-template-areas: "icon name name name name ." ". info info info info ."
 	&__icon
 		grid-area: icon
+		align-self: start
 		position: relative
-		background-color: #c3c601
-		background-image: url('data:image/png;base64,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')
+		background-image: $pattern-green
 		&::before
 			content: ""
 			display: block
@@ -665,7 +1127,17 @@ small
 		grid-area: info
 		padding-left: toRem(5px)
 		line-height: 1.5
+@media only screen and(max-width: 1024px) //.benefit
+	.benefit
+		grid-template-columns: 5rem 5rem repeat(4, 1fr)
+		grid-template-rows: min-content 1fr
+@media only screen and (max-width: 590px) //.benefit
+	.benefit
+		grid-row-gap: $gutter
+		&:nth-child(n+1)
+			grid-template-areas: "icon name name name name name" "icon info info info info info"
 .fos
+	position: relative
 	display: grid
 	grid-template-columns: 58% 40%
 	grid-column-gap: $gutter
@@ -675,6 +1147,20 @@ small
 	&--category
 		margin-top: toRem(86px)
 		margin-bottom: toRem(14px)
+	&:not(&--category)::before
+		content: "-10%"
+		position: absolute
+		top: calc(-2.1 * var(--gutter))
+		left: calc(-2.1 * var(--gutter))
+		display: flex
+		justify-content: center
+		align-items: center
+		width: toRem(100px)
+		height: toRem(100px)
+		background-color: #98c2cd
+		font-size: toRem(30px)
+		font-weight: bold
+		color: #fff
 	&__info
 		display: grid
 		grid-template-columns: minmax(0, 54px) repeat(6, 1fr)
@@ -715,8 +1201,48 @@ small
 	&__submit
 		grid-column: 1/5
 		margin-top: toRem(-12px)
-
-
+@media only screen and(max-width: 1024px) //.fos
+	.fos
+		&__info
+			grid-template-columns: 1fr repeat(6,1fr)
+		&__form
+			grid-template-columns: repeat(4,1fr) 1fr
+		&__input
+			&--name
+				grid-column: 1/-2
+			&--phone
+				grid-column: 1/-2
+@media only screen and(max-width: 768px) //.fos
+	.fos
+		grid-template-columns: 50% 50%
+		&__info
+			grid-template-columns: 1rem repeat(6,1fr)
+		&__form
+			grid-template-columns: repeat(4,1fr) 1rem
+@media only screen and (max-width: 590px) //.fos
+	.fos
+		grid-template-columns: 1fr
+		&__arrow
+			order: 2
+			grid-column: -2/-3
+			align-self: center
+			svg
+				transform: rotate(90deg)
+		&__text
+			grid-column: 2/-3
+		&__form
+			grid-template-columns: 1rem repeat(4, 1fr) 1rem
+			&_heading
+				grid-column: 2/-2
+		&__input
+			&--name
+				grid-column: 2/-2
+			&--phone
+				grid-column: 2/-2
+		&__soglasie
+			grid-column: 2/-2
+		&__submit
+			grid-column: 2/-2
 .info
 	display: grid
 	grid-template-columns: 6fr 1fr 5fr
@@ -734,14 +1260,14 @@ small
 	&__heading
 		margin: toRem(24px) 0
 	&__images
-		grid-column: 3
+		grid-column: -1/-2
 		position: relative
 		&_img
 			position: relative
 			border: 17px solid #c3c600
-			border-image-source: url(data:image/jpeg;base64,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)
+			border-image-source: $pattern-green 
 			border-image-slice: 10
-			border-image-repeat: round
+			border-image-repeat: repeat
 			&::before
 				content: ""
 				display: block
@@ -770,7 +1296,36 @@ small
 		bottom: toRem(-88px)
 		right: toRem(114px)
 		z-index: 2
+		img
+			max-width: 100%
+@media only screen and (max-width: 1024px) //.info
+	.info
+		grid-template-columns: 7fr 5fr
+		&__images
+			&_img
+				&--1
+					left: 44.4%
+		&__stolb_img
+			right: toRem(160px)
+			//max-width: 200px
+@media only screen and (max-width: 768px) //.info
+	.info
+		grid-template-columns: 7fr 5fr
+		&__images
+			&_img
+				&--1
+					left: -20%
+				&--2
+					top: toRem(-55px)
+					left: -3.5%
 
+		&__stolb_img
+			display: none
+@media only screen and (max-width: 590px) //.info
+	.info
+		grid-template-columns: 1fr
+		&__images
+			display: none
 .mailing
 	margin-bottom: toRem(60px)
 	padding: toRem(45px) 0
@@ -795,7 +1350,30 @@ small
 		margin-top: toRem(-2px)
 	&__submit
 		grid-column: 8/12
-
+@media only screen and (max-width: 1024px) //.mailing
+	.mailing
+		&__input
+			&--name
+				grid-column: 2/7
+			&--phone
+				grid-column: 7/12
+			&--email
+				grid-column: 2/7
+		&__soglasie
+			order: 2
+			grid-column: 2/-2
+		&__submit
+			grid-column: 7/12
+@media only screen and (max-width: 768px) //.mailing
+	.mailing
+		&__form
+			grid-template-columns: 1rem repeat(10, 1fr) 1rem
+@media only screen and (max-width: 590px) //.mailing
+	.mailing
+		&__input
+			grid-column: 2/-2
+		&__submit
+			grid-column: 2/-2
 footer
 	background-color: #6198a7
 .footer
@@ -855,6 +1433,46 @@ footer
 				font-weight: normal
 				color: #bedce4
 				text-transform: none
+@media only screen and (max-width:1024px) //.footer
+	.footer
+		&__logo
+			align-self: start
+		&__phone
+			grid-column: 3/6
+		&__email
+			grid-column: 6/9
+		&__adress
+			grid-column: 9/13
+		&__menu
+			grid-column: 1/-1
+		&__social
+			order: 2
+			grid-column: -1/-6
+			justify-content: flex-end
+@media only screen and (max-width: 768px) //.footer
+	.footer
+		&__logo
+			grid-column: 1/4
+		&__phone
+			grid-column: 4/9
+		&__email
+			grid-column: 9/13
+		&__adress
+			order: 2
+			grid-column: 1/8
+@media only screen and (max-width: 590px) //.footer
+	.footer
+		&__logo
+			grid-column: 1/5
+			grid-row: 1/3
+		&__phone
+			justify-self: end
+			grid-column: 5/-1
+		&__email
+			justify-self: end
+			grid-column: 5/-1
+		&__menu
+			grid-template-columns: 1fr 1fr
 .bottom
 	display: grid
 	grid-template-columns: 3fr 1fr
@@ -865,6 +1483,12 @@ footer
 	border-top: 1px solid rgb(150, 184, 193)
 	font-size: toRem(13px)
 	color: #bedce4
+@media only screen and (max-width: 1024px) //.bottom
+	.bottom
+		grid-template-columns: 3fr 2fr
+@media only screen and (max-width: 590px) //.bottom
+	.bottom
+		grid-template-columns: 1fr
 .dev
 	justify-self: end
 	display: flex
@@ -911,7 +1535,7 @@ footer
 		font-size: toRem(16px)
 		line-height: 1.5
 	&__heading
-		grid-column: 1/3
+		grid-column: 1/-1
 	&__info
 		padding: toRem(42px) 0 toRem(38px)
 	&__gallery
@@ -921,7 +1545,18 @@ footer
 		grid-column-gap: $gutter
 		grid-row-gap: $gutter
 		padding: toRem(48px) 0
-
+@media only screen and (max-width: 768px) //.category
+	.category
+		&__gallery
+			grid-template-columns: 1fr 1fr
+@media only screen and (max-width: 590px) //.category
+	.category
+		&__article
+			grid-template-columns: 1fr
+		&__gallery
+			padding-bottom: toRem(24px)
+		&__info
+			padding-top: toRem(21px)
 .headbanner
 	position: relative
 	margin: 48px 0 -82px
@@ -930,6 +1565,11 @@ footer
 		content: ""
 		display: block
 		padding-top: 39.2%
+@media only screen and (max-width: 768px) //.headbanner
+	.headbanner
+		margin: 12px 0 -25px
+
+
 .our_works
 	display: grid
 	grid-template-columns: repeat(3, 1fr)
@@ -937,9 +1577,18 @@ footer
 	grid-row-gap: $gutter
 	margin-top: toRem(32px)
 	padding: toRem(46.6px) 0 toRem(62.6px)
+	&--portfolio
+		margin-top: toRem(-16px)
+		grid-row-gap: toRem(60px)	
 	&__heading
-		grid-column: 1/4
+		grid-column: 1/-1
 		margin-bottom: toRem(50px)
+@media only screen and (max-width: 768px) //.our_works
+	.our_works
+		grid-template-columns: 1fr 1fr
+@media only screen and (max-width: 590px) //.our_works
+	.our_works
+		grid-template-columns: 1fr
 .work_item
 	display: flex
 	flex-direction: column
@@ -971,6 +1620,7 @@ footer
 		background-color: #c3c600
 		color: #fff
 		padding: toRem(10px) toRem(12px)
+
 .faq
 	margin: toRem(32px) 0 0
 	padding: toRem(24px) 0 toRem(97px)
@@ -1001,6 +1651,20 @@ footer
 		font-size: toRem(14px)
 		color: #666666
 		line-height: 1.4
+@media only screen and (max-width: 1024px) //.faq
+	.faq
+		&__bg
+			background-size: contain
+			background-position: 150% bottom
+@media only screen and (max-width: 768px) //.faq
+	.faq
+		&__bg
+			background-image: none!important
+		&__name
+			grid-column: 2/-1
+		&__info
+			grid-column: 2/-1
+			
 .contacts
 	display: grid
 	grid-template-columns: repeat(12, 1fr)
@@ -1026,6 +1690,11 @@ footer
 		background-color: #fff
 		border: 10px solid #c3c600
 		padding: toRem(50px) 0 toRem(55px)
+		&--pop-up
+			border: none
+			background-color: #fff
+		&_heading
+			grid-column: 2/8		
 	&__name
 		grid-column: 2/8
 		padding-bottom: 32px
@@ -1047,35 +1716,77 @@ footer
 		grid-column: 2/5
 	&__submit
 		grid-column: 5/8
-
+@media only screen and (max-width: 768px) //.contacts
+	.contacts
+		&__fos
+			grid-template-columns: 1rem repeat(6,1fr) 1rem
+		&__input
+			&--name
+				grid-column: 2/5
+			&--phone
+				grid-column: 5/-2
+			&--email
+				grid-column: 2/-2
+		&__soglasie
+			grid-column: 2/-2
+@media only screen and (max-width: 590px) //.contacts
+	.contacts
+		margin-top: 0
+		&__info
+			grid-column: 1/-1
+		&__fos
+			grid-column: 1/-1
+		&__input
+			&--name
+				grid-column: 2/-2
+			&--phone
+				grid-column: 2/-2
+		&__submit
+			grid-column: 2/-2
 .news_item
 	display: grid
 	grid-template-columns: repeat(12, 1fr)
+	grid-template-rows: min-content min-content min-content 1fr
 	grid-column-gap: $gutter
 	grid-row-gap: $gutter
-	margin: toRem(10px) 0
+	margin: toRem(10px) 0 toRem(44px)
 	&:last-child
 		margin-bottom: toRem(48px)
 	&__img_wrap
 		grid-column: 1/3
 		grid-row: 1/5
+		align-self: start
+		&::before
+			display: block
+			padding-top: 100%
+			background-repeat: no-repeat
+			background-size: contain
+
+		&--sales
+			&::before
+				content: ""
+				background-image:: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' id='Layer_1' viewBox='0 0 183 183'%3e%3cstyle id='style2'%3e.st0%7bfill:%23fff%7d%3c/style%3e%3cg id='g12' transform='matrix(.5 0 0 .5 37.4502 35.3434)'%3e%3cpath class='st0' d='M161.3 205.7c-3.2-1.2-7.7-2.9-12.2-4.7-18.1-7-15.5-7-27.1 7.1-2 2.4-4 4.9-5.9 7.4-5.2 6.5-6.7 6.4-12-.2-4-4.9-8-9.8-11.9-14.8-3.2-4.2-7.1-5-11.9-3-6.5 2.6-13 5.1-19.5 7.5-5.4 2-7.2.8-8.1-5-1-6.7-2.1-13.5-3.1-20.2-.9-5.9-3.3-8.2-9.5-9.1-6.9-1-13.8-2.1-20.7-3.2-4.7-.8-6-2.8-4.3-7.4 2.4-6.7 5-13.4 7.7-20 2-5 1.3-8.9-3.2-12.3-5.6-4.2-10.9-8.7-16.3-13.2-4.2-3.5-4.3-5.7-.1-9.2 5.6-4.7 11.3-9.3 17.1-13.9 3.6-2.9 4.5-6.4 2.9-10.6-2.6-6.8-5.3-13.6-7.8-20.5-1.9-5.2-.8-7.1 4.5-7.9 6.9-1.1 13.8-2.1 20.7-3.2 5.9-.9 8.2-3.3 9.1-9.5 1-6.9 2-13.8 3.2-20.7.8-4.7 2.8-5.9 7.4-4.3 6.9 2.5 13.7 5.1 20.5 7.8 4.6 1.9 8.3 1 11.5-3 4.5-5.8 9.1-11.5 13.8-17.1 3.1-3.7 5.4-3.7 8.5.1 4.6 5.5 9.2 11 13.5 16.7 3.4 4.4 7.3 5.2 12.3 3.2 6.5-2.6 13-5.1 19.5-7.4 5.1-1.9 7-.6 7.9 4.7 1.1 6.9 2.1 13.8 3.2 20.7.9 5.6 3.3 8 9.1 8.9 6.9 1 13.8 2.1 20.7 3.2 5 .8 6.3 2.8 4.5 7.6-2.5 6.9-5.2 13.7-7.8 20.5-1.7 4.4-.9 8.1 2.9 11.1 5.7 4.5 11.4 9.2 17.1 13.8 3.9 3.2 3.9 5.6 0 8.9-5.6 4.7-11.3 9.3-17.1 13.8-3.8 3-4.6 6.6-2.9 11.1 2.7 6.8 5.3 13.6 7.8 20.5 1.8 4.9.6 6.8-4.4 7.6-7.1 1.1-14.1 2.2-21.2 3.2-5.1.7-8 3.6-8.7 8.8-1 7.1-2.1 14.1-3.2 21.2-.7 2.8-1.5 5.5-6.5 5zM24.8 110.1c16.9 10.8 20.7 24.8 11.5 42.5 8.5 1.4 16.5 2.3 22.8 8.5 6.3 6.2 7.1 14.3 8.8 22.8 17.5-9.1 31.5-5.5 42.1 11.3 5.5-6.8 10.4-13.3 18.9-15.5 8.4-2.2 15.9.8 23.9 4 1.1-8.7 2.4-16.6 8.6-22.9 6.2-6.2 14.4-6.7 22.4-8.5-3.5-7.9-6.1-15.4-3.9-23.7 2.2-8.4 8.7-13.3 15.3-18.6-7-5.2-13.2-10.2-15.4-18.5-2.2-8.4.6-16 4.2-24.2-20.2-.8-30.4-11.3-31.2-31.3-18.1 9.5-32 5.7-42.7-11.3C99.4 42 85.3 45.3 67.5 36.2c-.8 20.2-11.2 30.5-31.3 31.3 9.2 17.9 5.6 31.9-11.4 42.6z' id='path4' fill='%23fff'/%3e%3cpath class='st0' d='M148.6 77.9c-1.7 2.6-2.6 4.8-4.1 6.4-19.4 19.5-38.8 38.9-58.3 58.3-3.8 3.8-7.9 4-10.9.9-2.8-2.9-2.3-6.9 1.3-10.5 19.4-19.4 38.8-38.9 58.3-58.3 2.4-2.4 5.1-4.4 8.3-2.5 2 1.2 3.4 3.6 5.4 5.7z' id='path6' fill='%23fff'/%3e%3cpath class='st0' d='M73.5 89.1c0-9.6 7.7-17.4 17.3-17.5 9.8-.1 17.7 8 17.6 17.8-.1 9.5-8.1 17.3-17.7 17.2-9.5 0-17.2-7.8-17.2-17.5zM91 81.2c-4.2-.1-8 3.6-8.1 7.7-.1 4.2 3.6 7.9 7.9 8 4.4.1 7.9-3.3 7.9-7.7s-3.3-7.9-7.7-8z' id='path8' fill='%23fff'/%3e%3cpath class='st0' d='M129.9 145.7c-9.6-.1-17.3-7.8-17.3-17.5 0-9.5 7.9-17.5 17.4-17.6 9.5-.1 17.8 8.4 17.6 17.9-.2 9.6-8.1 17.2-17.7 17.2zm7.9-17.6c-.1-4.5-3.4-7.7-7.9-7.6-4.4.1-8 3.6-7.8 7.9.1 4.3 3.9 7.9 8.1 7.8 4.3-.1 7.7-3.6 7.6-8.1z' id='path10' fill='%23fff'/%3e%3c/g%3e%3c/svg%3e")
+		&--comment
+			&::before
+				content: ""
+				background-image:: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' id='Layer_1' viewBox='0 0 183 183'%3e%3cstyle id='style2'%3e.st0%7bfill:%23fff%7d%3c/style%3e%3cg id='g10' transform='matrix(.43033 0 0 .43033 42.8852 46.8617)'%3e%3cpath class='st0' d='M102.9 86c-2-1.8-4.2-3.2-6.8-3.7-2.5-.5-5.2-.5-7.7-.5-2.3 0-4.5.7-6.5 1.7-2.6 1.4-4.9 3.2-6.8 5.6-1.6 2.1-3 4.4-3.5 7-1.3 6.1-.5 11.8 3.6 16.7 1.6 2 3.5 3.7 5.7 4.9 1.7.9 3.5 1.4 5.2 2.1.3.1.7.7.6.9-.3 1.4-.6 2.9-1.2 4.2-.7 1.7-1.7 3.3-2.5 4.9-.6 1.1-1.3 2.2-2 3.3-.4.7-.9 1.4-1.5 2.3.8-.1 1.4-.1 1.9-.4 2.7-1.3 5.4-2.5 8-3.9 1.8-1 3.5-2.1 5-3.4 1.9-1.6 3.8-3.3 5.5-5.1 1.3-1.4 2.7-2.8 3.7-4.4 1.4-2.1 2.4-4.4 3.6-6.6 1.6-2.9 2-6 2.4-9.2.3-2.8-.3-5.6-1.2-8.3-1.1-3.1-2.9-5.8-5.5-8.1z' id='path4' fill='%23fff'/%3e%3cpath class='st0' d='M142.3 84.2c-2.2-1.4-4.5-2.3-7.1-2.4-3.3-.2-6.5-.2-9.7 1-2.8 1-5.2 2.6-7.3 4.6-2.3 2.3-4 5-4.9 8.2-.8 2.9-.8 5.9-.4 8.9.1.9.2 1.9.6 2.7 1.1 2.9 2.6 5.6 5 7.8 1.8 1.7 3.8 3.1 6.2 4 1 .4 2 .6 3 1 .2.1.5.5.5.8.1.4 0 .8-.1 1.2-.8 2.1-1.5 4.3-2.5 6.3-.7 1.5-1.7 2.8-2.6 4.3-.6.9-1.2 1.9-1.7 2.8l.2.2c1.3-.4 2.7-.8 3.9-1.3 1.8-.8 3.5-1.8 5.2-2.8 1.5-.9 3-1.8 4.3-2.9 1.8-1.4 3.5-2.8 5.1-4.3 1.6-1.6 3.2-3.3 4.6-5.1 1.4-2 2.7-4.1 3.7-6.3 1-2 1.9-4.1 2.4-6.3 1.1-5.7.7-11.2-2.5-16.4-1.6-2.4-3.5-4.5-5.9-6z' id='path6' fill='%23fff'/%3e%3cpath class='st0' d='M110.1 5C54 5 8.4 50.5 8.4 106.6c0 18.5 5 35.9 13.6 50.8L8.4 208.3l50.8-13.6c15 8.7 32.3 13.6 50.8 13.6 56.1 0 101.6-45.5 101.6-101.6C211.6 50.6 166.2 5 110.1 5zm0 183.3c-14.4 0-28.5-3.8-40.8-10.9l-7.2-4.2-8 2.1-17.4 4.7 4.6-17.3 2.1-8-4.2-7.2c-7.1-12.3-10.9-26.5-10.9-40.8 0-45 36.6-81.6 81.6-81.6 45 0 81.6 36.6 81.6 81.6.2 45-36.4 81.6-81.4 81.6z' id='path8' fill='%23fff'/%3e%3c/g%3e%3c/svg%3e")
 	&__img
 		display: block
 		max-width: 100%
 		object-fit: contain
 	&__name
-		grid-column: 3/13
+		grid-column: 3/-1
 		align-self: start
 		font-size: toRem(20px)
 		font-weight: 600
 	&__date
-		grid-column: 3/13
+		grid-column: 3/-1
 		align-self: start
 		font-size: toRem(12px)
 		line-height: 1
 		color: #888888
 	&__info
-		grid-column: 3/13
+		grid-column: 3/-1
 		align-self: start
 		padding-right: toRem(26px)
 		font-size: toRem(14px)
@@ -1089,6 +1800,30 @@ footer
 		text-transform: none
 		background-color: #c3c600
 		color: #fff
+@media only screen and (max-width: 768px) //.news_item
+	.news_item
+		grid-template-columns: repeat(4, 4fr) repeat(8, 1fr)
+@media only screen and (max-width: 590px) //.news_item
+	.news_item
+		grid-template-columns: 1fr 1fr
+		&__img_wrap
+			grid-column: 1/-1
+			grid-row: 1/4
+		&__name
+			grid-column: 1/-1
+		&__date
+			grid-column: 2/3
+			justify-self: end
+		&__link
+			grid-column: 2/3
+		&__info
+			//order: 2
+			grid-column: 1/-1
+		&__img
+			display: block
+			width: 100%
+			height: 100%
+			object-fit: cover
 
 .p404
 	display: grid
@@ -1114,5 +1849,804 @@ footer
 	&__link
 		color: inherit
 		text-decoration: underline
+@media only screen and (max-width: 768px)
+	.p404
+		&__code
+			grid-column: 1/-1
+			margin: 0 auto
+		&__heading
+			grid-column: 2/-2
+		&__small
+			grid-column: 2/-2
+@media only screen and (max-width: 590px)
+	.p404
+		padding-top: 48px
+		padding-bottom: 48px
+		&__heading
+			margin-top: 24px
+			font-size: 1.5rem
+		&__small
+			font-size: 1rem
+
+
+.pag
+	text-align: center
+	font-size: toRem(14px)
+	margin: toRem(84px) 0
+	&--portfolio
+		margin: 0
+		padding: 0 0 128px
+	&__item
+		display: inline-flex
+		justify-content: center
+		align-items: center
+		width: toRem(34px)
+		height: toRem(34px)
+		transition: 0.2s all ease
+		color: #333
+		&--current, &:hover
+			background-color: #c3c600
+			text-decoration: none
+			color: #fff
+.article
+	padding: toRem(24px) 0 toRem(80px)
+	&__img
+		display: block
+		margin-left: $gutter
+		margin-bottom: $gutter
+		float: right
+@media only screen and(max-width: 768px) //.article
+	.article
+		&__img
+			max-width: 50%
+@media only screen and(max-width: 590px) //.article
+	.article
+		&__img
+			max-width: 100%
+			width: 100%
+.portfolio_info
+	margin: 20px 0
+
+.product
+	&__info
+		display: grid
+		grid-template-columns: repeat(12, 1fr)
+		grid-row-gap: $gutter
+		grid-column-gap: $gutter
+		margin-top: toRem(-114px)
+		margin-bottom: 40px
+	&__slider
+		grid-column: 1/7
+		.slider-nav
+			margin: toRem(24px) -10px
+		&_item
+			position: relative
+			display: block
+			width: 100%
+			&::before
+				content: ""
+				display: block
+				padding-top: 67.1%
+	&__char
+		grid-column: 8/-1
+		display: grid
+		align-self: start
+		grid-template-columns: repeat(5, 1fr)
+		grid-auto-rows: repeat(6, min-content)
+		grid-column-gap: $gutter
+		grid-row-gap: $gutter
+		padding-top: toRem(150px)
+		font-size: toRem(15px)
+		&_tr
+			grid-column: 1/-1
+			display: flex
+			border-bottom: 1px dashed #cccccc
+			padding-bottom: 3px
+			line-height: 2
+		&_name
+			flex: 2
+			text-align: left
+			color: #666666
+		&_val
+			flex: 3
+			text-align: right
+		&_price_name
+			grid-column: 1/3
+			font-size: toRem(18px)
+			font-weight: 600
+	&__price
+		grid-column: 3/-1
+		text-align: right
 		
-		
+		font-size: toRem(24px)
+		font-weight: bold
+		color: #b6b819
+		line-height: 1
+		&--old
+			font-size: toRem(18px)
+			color: #666666
+			text-decoration: line-through
+	&__btn
+		grid-column: -1/-4	
+		margin: toRem(24px) 0 toRem(22px)
+	&__link_block
+		grid-column: 1/4
+		display: flex
+		flex-direction: column
+		justify-content: space-around	
+	&__link
+		font-size: toRem(15px)
+		text-decoration: underline
+		text-decoration-color: #b6b6b6
+		color: #333		
+		&::before
+			display: inline-block
+			width: 24px
+			vertical-align: -webkit-baseline-middle
+		&--recom
+			&::before
+				content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 198 156'%3e%3cpath fill='%23c4c718' d='M163 0L85.9 77.1l-51-50.9L0 61.1 85.9 147l34.9-34.9L198 34.9z'/%3e%3c/svg%3e")" "
+		&--download
+			&::before
+				content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 198 156'%3e%3cpath fill='%23c4c718' d='M166.9 88.3h-33.6V6H64.6v82.3H31.1L99 156z'/%3e%3c/svg%3e")" "
+	&__share
+		grid-column: -1/-2
+		font-size: toRem(15px)
+		font-weight: 600
+	&__article
+		padding: 38px 0
+@media only screen and (max-width: 768px) //.product
+	.product
+		&__info
+			margin-top: toRem(-57px)
+		&__char
+			padding-top: toRem(75px)
+		&__btn
+			grid-column: 1/-1
+		&__link_block
+			grid-column: 1/-1
+		&__share
+			grid-column: 1/-1
+@media only screen and (max-width: 590px) //.product
+	.product
+		&__info
+			grid-template-columns: 1fr 1fr
+		&__slider
+			grid-column: 1/-1
+		&__char
+			grid-column: 1/-1
+		&__btn
+			grid-column: 1/-1
+		&__link_block
+			grid-column: 1/-1
+		&__share
+			grid-column: 1/-1
+.share
+	&__link
+		display: inline-block
+		width: 23px
+		height: 23px
+		background-color: #3333
+		&_img
+			display: block
+			width: 100%
+			height: 100%
+			object-fit: cover
+/* Slider*/
+
+.slick-slider
+	position: relative
+	display: block
+	box-sizing: border-box
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	-ms-touch-action: pan-y
+	touch-action: pan-y
+	-webkit-tap-highlight-color: transparent
+
+.slick-list
+	position: relative
+	overflow: hidden
+	display: block
+	margin: 0
+	padding: 0
+	&:focus
+		outline: none
+	&.dragging
+		cursor: pointer
+		cursor: hand
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+	-webkit-transform: translate3d(0, 0, 0)
+	-moz-transform: translate3d(0, 0, 0)
+	-ms-transform: translate3d(0, 0, 0)
+	-o-transform: translate3d(0, 0, 0)
+	transform: translate3d(0, 0, 0)
+
+.slick-track
+	position: relative
+	left: 0
+	top: 0
+	display: block
+	margin-left: auto
+	margin-right: auto
+	&:before,
+	&:after
+		content: ""
+		display: table
+	&:after
+		clear: both
+	.slick-loading &
+		visibility: hidden
+
+.slick-slide
+	float: left
+	height: 100%
+	min-height: 1px
+	[dir="rtl"] &
+		float: right
+	img
+		display: block
+	&.slick-loading img
+		display: none
+	display: none
+	&.dragging img
+		pointer-events: none
+	.slick-initialized &
+		display: block
+	.slick-loading &
+		visibility: hidden
+	.slick-vertical &
+		display: block
+		height: auto
+		border: 1px solid transparent
+
+.slick-arrow.slick-hidden
+	display: none
+
+
+// Slick icon entity codes outputs the following
+// "\2190" outputs ascii character "←"
+// "\2192" outputs ascii character "→"
+// "\2022" outputs ascii character "•"
+
+
+
+@function slick-image-url($url)
+	@if function-exists(image-url)
+		@return image-url($url)
+	@else
+		@return url($slick-loader-path + $url)
+
+@function slick-font-url($url)
+	@if function-exists(font-url)
+		@return font-url($url)
+	@else
+		@return url($slick-font-path + $url)
+
+/* Slider*/
+
+.slick-list
+	.slick-loading &
+		background: white slick-image-url("ajax-loader.gif") center center no-repeat
+
+/* Icons*/
+@if $slick-font-family == "slick"
+	@font-face
+		font-family: "slick"
+		src: slick-font-url("slick.eot")
+		src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg")
+		font-weight: normal
+		font-style: normal
+
+/* Arrows*/
+
+.slick-prev,
+.slick-next
+	position: absolute
+	display: block
+	height: 46px
+	width: 46px
+	line-height: 0px
+	font-size: 0px
+	cursor: pointer
+	background-color: #c3c600
+	background-repeat: no-repeat
+	background-size: cover
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 176.3 176.3' width='82' height='82'%3e%3cpath fill='%23fff' d='M47.3 92.393h65.731l-24.4503 24.0555 5.4334 6.1015L129 88.185 94.0141 53.75l-5.4334 6.1717 24.4504 24.0554H47.3z'/%3e%3c/svg%3e")
+	color: transparent
+	top: 50%
+	padding: 0
+	border: none
+	outline: none
+	z-index: 6
+	transition: 0.2s all ease
+	&:hover:not(.slick-disabled), &:focus
+		outline: none
+		filter: brightness(1.2)
+		color: transparent
+		&:before
+			opacity: $slick-opacity-on-hover
+	&.slick-disabled
+		opacity: $slick-opacity-not-active
+		cursor: default
+	&:before
+		content: ""
+		font-family: $slick-font-family
+		font-size: 20px
+		line-height: 1
+		color: $slick-arrow-color
+		opacity: $slick-opacity-default
+
+.slick-prev
+	left: 0
+	transform: translate(-25%, -50%) rotate(180deg)
+	[dir="rtl"] &
+		left: auto
+		right: -25px
+
+.slick-next
+	right: 0
+	transform: translate(25%, -50%)
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 176.3 176.3' width='82' height='82'%3e%3cpath fill='%23fff' d='M47.3 92.393h65.731l-24.4503 24.0555 5.4334 6.1015L129 88.185 94.0141 53.75l-5.4334 6.1717 24.4504 24.0554H47.3z'/%3e%3c/svg%3e")
+
+	[dir="rtl"] &
+		left: -25px
+		right: auto
+
+/* Dots*/
+
+.slick-dotted.slick-slider
+	margin-bottom: 30px
+
+.slick-dots
+	position: absolute
+	bottom: -25px
+	list-style: none
+	display: block
+	text-align: center
+	padding: 0
+	margin: 0
+	width: 100%
+	li
+		position: relative
+		display: inline-block
+		height: 20px
+		width: 20px
+		margin: 0 5px
+		padding: 0
+		cursor: pointer
+		button
+			border: 0
+			background: transparent
+			display: block
+			height: 20px
+			width: 20px
+			outline: none
+			line-height: 0px
+			font-size: 0px
+			color: transparent
+			padding: 5px
+			cursor: pointer
+			&:hover, &:focus
+				outline: none
+				&:before
+					opacity: $slick-opacity-on-hover
+			&:before
+				position: absolute
+				top: 0
+				left: 0
+				content: $slick-dot-character
+				width: 20px
+				height: 20px
+				font-family: $slick-font-family
+				font-size: $slick-dot-size
+				line-height: 20px
+				text-align: center
+				color: $slick-dot-color
+				opacity: $slick-opacity-not-active
+				-webkit-font-smoothing: antialiased
+				-moz-osx-font-smoothing: grayscale
+		&.slick-active button:before
+			color: $slick-dot-color-active
+			opacity: $slick-opacity-default
+
+/* Magnific Popup CSS*/
+
+.mfp-bg
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 1042
+	overflow: hidden
+	position: fixed
+	background: #fff
+	opacity: 0.8
+
+.mfp-wrap
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 1043
+	position: fixed
+	outline: none !important
+	-webkit-backface-visibility: hidden
+
+.mfp-container
+	text-align: center
+	position: absolute
+	width: 100%
+	height: 100%
+	left: 0
+	top: 0
+	padding: 0 8px
+	box-sizing: border-box
+	&:before
+		content: ''
+		display: inline-block
+		height: 100%
+		vertical-align: middle
+
+.mfp-align-top .mfp-container:before
+	display: none
+
+.mfp-content
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	margin: 0 auto
+	text-align: left
+	z-index: 1045
+
+.mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content
+	width: 100%
+	cursor: auto
+
+.mfp-ajax-cur
+	cursor: progress
+
+.mfp-zoom-out-cur
+	cursor: -moz-zoom-out
+	cursor: -webkit-zoom-out
+	cursor: zoom-out
+	.mfp-image-holder .mfp-close
+		cursor: -moz-zoom-out
+		cursor: -webkit-zoom-out
+		cursor: zoom-out
+
+.mfp-zoom
+	cursor: pointer
+	cursor: -webkit-zoom-in
+	cursor: -moz-zoom-in
+	cursor: zoom-in
+
+.mfp-auto-cursor .mfp-content
+	cursor: auto
+
+.mfp-close, .mfp-arrow, .mfp-preloader, .mfp-counter
+	-webkit-user-select: none
+	-moz-user-select: none
+	user-select: none
+
+.mfp-loading.mfp-figure
+	display: none
+
+.mfp-hide
+	display: none !important
+
+.mfp-preloader
+	color: #CCC
+	position: absolute
+	top: 50%
+	width: auto
+	text-align: center
+	margin-top: -0.8em
+	left: 8px
+	right: 8px
+	z-index: 1044
+	a
+		color: #CCC
+		&:hover
+			color: #FFF
+
+.mfp-s-ready .mfp-preloader, .mfp-s-error .mfp-content
+	display: none
+
+button
+	&.mfp-close, &.mfp-arrow
+		overflow: visible
+		cursor: pointer
+		background: transparent
+		border: 0
+		-webkit-appearance: none
+		display: block
+		outline: none
+		padding: 0
+		z-index: 1046
+		box-shadow: none
+		touch-action: manipulation
+	&::-moz-focus-inner
+		padding: 0
+		border: 0
+
+.mfp-close
+	width: 44px
+	height: 44px
+	line-height: 44px
+	position: absolute
+	right: 0
+	top: 0
+	text-decoration: none
+	text-align: center
+	opacity: 0.65
+	padding: 0 0 18px 10px
+	color: #FFF
+	font-style: normal
+	font-size: 28px
+	font-family: Arial, Baskerville, monospace
+	&:hover, &:focus
+		opacity: 1
+	&:active
+		top: 1px
+
+.mfp-close-btn-in .mfp-close
+	color: #333
+
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close
+	color: #FFF
+	right: -6px
+	text-align: right
+	padding-right: 6px
+	width: 100%
+
+.mfp-counter
+	position: absolute
+	top: 0
+	right: 0
+	color: #CCC
+	font-size: 12px
+	line-height: 18px
+	white-space: nowrap
+
+.mfp-arrow
+	position: absolute
+	opacity: 0.65
+	margin: 0
+	top: 50%
+	margin-top: -55px
+	padding: 0
+	width: 90px
+	height: 110px
+	-webkit-tap-highlight-color: transparent
+	&:active
+		margin-top: -54px
+	&:hover, &:focus
+		opacity: 1
+	&:before
+		content: ''
+		display: block
+		width: 0
+		height: 0
+		position: absolute
+		left: 0
+		top: 0
+		margin-top: 35px
+		margin-left: 35px
+		border: medium inset transparent
+	&:after
+		content: ''
+		display: block
+		width: 0
+		height: 0
+		position: absolute
+		left: 0
+		top: 0
+		margin-top: 35px
+		margin-left: 35px
+		border: medium inset transparent
+		border-top-width: 13px
+		border-bottom-width: 13px
+		top: 8px
+	&:before
+		border-top-width: 21px
+		border-bottom-width: 21px
+		opacity: 0.7
+
+.mfp-arrow-left
+	left: 0
+	&:after
+		border-right: 17px solid #FFF
+		margin-left: 31px
+	&:before
+		margin-left: 25px
+		border-right: 27px solid #3F3F3F
+
+.mfp-arrow-right
+	right: 0
+	&:after
+		border-left: 17px solid #FFF
+		margin-left: 39px
+	&:before
+		border-left: 27px solid #3F3F3F
+
+.mfp-iframe-holder
+	padding-top: 40px
+	padding-bottom: 40px
+	.mfp-content
+		line-height: 0
+		width: 100%
+		max-width: 900px
+	.mfp-close
+		top: -40px
+
+.mfp-iframe-scaler
+	width: 100%
+	height: 0
+	overflow: hidden
+	padding-top: 56.25%
+	iframe
+		position: absolute
+		display: block
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.6)
+		background: #000
+
+/* Main image in popup*/
+
+img.mfp-img
+	width: auto
+	max-width: 100%
+	height: auto
+	display: block
+	line-height: 0
+	box-sizing: border-box
+	padding: 40px 0 40px
+	margin: 0 auto
+
+/* The shadow behind the image*/
+
+.mfp-figure
+	line-height: 0
+	&:after
+		content: ''
+		position: absolute
+		left: 0
+		top: 40px
+		bottom: 40px
+		display: block
+		right: 0
+		width: auto
+		height: auto
+		z-index: -1
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.6)
+		background: #444
+	small
+		color: #BDBDBD
+		display: block
+		font-size: 12px
+		line-height: 14px
+	figure
+		margin: 0
+
+.mfp-bottom-bar
+	margin-top: -36px
+	position: absolute
+	top: 100%
+	left: 0
+	width: 100%
+	cursor: auto
+
+.mfp-title
+	text-align: left
+	line-height: 18px
+	color: #F3F3F3
+	word-wrap: break-word
+	padding-right: 36px
+
+.mfp-image-holder .mfp-content
+	max-width: 100%
+
+.mfp-gallery .mfp-image-holder .mfp-figure
+	cursor: pointer
+
+@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px)
+	/**
+	 *		 * Remove all paddings around the image on small screen*/
+	.mfp-img-mobile
+		.mfp-image-holder
+			padding-left: 0
+			padding-right: 0
+		img.mfp-img
+			padding: 0
+		.mfp-figure
+			&:after
+				top: 0
+				bottom: 0
+			small
+				display: inline
+				margin-left: 5px
+		.mfp-bottom-bar
+			background: rgba(0, 0, 0, 0.6)
+			bottom: 0
+			margin: 0
+			top: auto
+			padding: 3px 5px
+			position: fixed
+			box-sizing: border-box
+			&:empty
+				padding: 0
+		.mfp-counter
+			right: 5px
+			top: 3px
+		.mfp-close
+			top: 0
+			right: 0
+			width: 35px
+			height: 35px
+			line-height: 35px
+			background: rgba(0, 0, 0, 0.6)
+			position: fixed
+			text-align: center
+			padding: 0
+
+@media all and (max-width: 900px)
+	.mfp-arrow
+		-webkit-transform: scale(0.75)
+		transform: scale(0.75)
+	.mfp-arrow-left
+		-webkit-transform-origin: 0
+		transform-origin: 0
+	.mfp-arrow-right
+		-webkit-transform-origin: 100%
+		transform-origin: 100%
+	.mfp-container
+		padding-left: 6px
+		padding-right: 6px
+
+.pop-up
+	position: relative
+	display: none
+	margin: 0 auto
+	max-width: 834px
+	padding: $gutter
+	background-image: $pattern-green
+	&__thanks
+		padding: 36px 0
+		text-align: center
+		font-size: toRem(18px)
+		font-weight: 600
+		color: #fff
+		text-transform: uppercase
+		&_big
+			font-size: toRem(30px)
+			font-weight: bold
+	.mfp-close
+		top: $gutter
+		right: calc(-2 * var(--gutter))
+		width: calc(3 * var(--gutter))
+		height: calc(3 * var(--gutter))
+		opacity: 1
+		background-color: #c3c600
+		box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2)
+		font-size: toRem(48px) 
+		color: #fff
+.mfp-content .pop-up
+	display: block
+@media only screen and (max-width: 590px) //.product
+	.pop-up
+		.mfp-close
+				top: calc(-3 * var(--gutter))
+				right: calc(-1 * var(--gutter))
+				width: calc(4 * var(--gutter))
+				height: calc(5 * var(--gutter))
+				font-size: toRem(36px)
